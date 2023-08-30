@@ -14,9 +14,9 @@ export const App = () => {
   return (
     <Suspense>
       <Routes>
-        <Route />
-        <Route />
-        <Route />
+        <Route path="/register" />
+        <Route path="/login" />
+        <Route path="/contacts" />
       </Routes>
     </Suspense>
   );
