@@ -7,6 +7,10 @@ const lazyImport = newComponent => {
   return lazy(() => import(`../pages/${newComponent}`));
 };
 
+const Register = lazyImport('Register');
+const Login = lazyImport('Login');
+const Contacts = lazyImport('Contacts');
+
 export const App = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
@@ -14,9 +18,9 @@ export const App = () => {
   return (
     <Suspense>
       <Routes>
-        <Route path="/register" element={} />
-        <Route path="/login" element={} />
-        <Route path="/contacts" element={} />
+        <Route path="/register" element={Register} />
+        <Route path="/login" element={Login} />
+        <Route path="/contacts" element={Contacts} />
       </Routes>
     </Suspense>
   );
