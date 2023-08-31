@@ -2,7 +2,7 @@ import { ContactForm } from '../components/ContactForm';
 import { ContactList } from '../components/ContactList';
 import { Filter } from '../components/Filter';
 import { LoadAlert } from '../components/LoadAlert';
-import PhonebookStyles from './PhonebookCSS/Pnonebook.module.css';
+import PhonebookStyles from '../components/PhonebookCSS/Pnonebook.module.css';
 import { useSelector } from 'react-redux';
 import { selectIsLoading, selectError } from '../redux/selectors';
 
