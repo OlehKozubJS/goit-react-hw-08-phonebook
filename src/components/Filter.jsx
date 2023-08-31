@@ -1,6 +1,6 @@
 import FilterStyles from './PhonebookCSS/Filter.module.css';
 import { useDispatch } from 'react-redux';
-import { searchQueryInput } from '../redux/filterSlice';
+import { searchQueryInput } from '../redux/contacts/filterSlice';
 
 export const Filter = () => {
   const dispatch = useDispatch();

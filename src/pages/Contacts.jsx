@@ -4,7 +4,7 @@ import { Filter } from '../components/Filter';
 import { LoadAlert } from '../components/LoadAlert';
 import PhonebookStyles from '../components/PhonebookCSS/Pnonebook.module.css';
 import { useSelector } from 'react-redux';
-import { selectIsLoading, selectError } from '../redux/selectors';
+import { selectIsLoading, selectError } from '../redux/contacts/selectors';
 
 export const Contacts = () => {
   const isLoading = useSelector(selectIsLoading);
