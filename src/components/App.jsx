@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AppCSS from './css/App.module.css';
 import Navigation from 'components/Navigation';
+import { useSelector } from 'react-redux';
 
 const lazyImport = newComponent => {
   return lazy(() => import(`../pages/${newComponent}`));
