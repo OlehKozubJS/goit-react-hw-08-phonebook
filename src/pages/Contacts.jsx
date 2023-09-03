@@ -6,7 +6,7 @@ import PhonebookStyles from '../components/PhonebookCSS/Pnonebook.module.css';
 import { useSelector } from 'react-redux';
 import { selectIsLoading, selectError } from '../redux/contacts/selectors';
 
-export const Contacts = () => {
+const Contacts = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
 
@@ -21,3 +21,5 @@ export const Contacts = () => {
     </div>
   );
 };
+
+export default Contacts;
