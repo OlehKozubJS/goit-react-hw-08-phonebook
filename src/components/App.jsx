@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
-//import Priva
+//import
 
 const lazyImport = newComponent => {
   return lazy(() => import(`../pages/${newComponent}`));
