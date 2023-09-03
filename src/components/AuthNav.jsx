@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 //import css from './PhonebookCSS/Navigation.module.css';
 
-export const AuyhNav = () => {
+export const AuthNav = () => {
   return (
     <div>
       <NavLink to="/register">Register</NavLink>
