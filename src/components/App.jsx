@@ -39,3 +39,7 @@ export const App = () => {
     </Suspense>
   );
 };
+
+/*
+<PrivateRoute redirectTo="/login" component={} />
+*/
