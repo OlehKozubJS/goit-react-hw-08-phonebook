@@ -1,22 +1,25 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
+import Pri
 
 const lazyImport = newComponent => {
   return lazy(() => import(`../pages/${newComponent}`));
 };
 
-const Register = lazyImport('Register');
-const Login = lazyImport('Login');
-const Contacts = lazyImport('Contacts');
+const HomePage = lazyImport('Home');
+const RegisterPage = lazyImport('Register');
+const LoginPage = lazyImport('Login');
+const ContactsPage = lazyImport('Contacts');
 
 export const App = () => {
   return (
     <Suspense>
       <Routes>
-        <Route path="/register" element={Register} />
-        <Route path="/login" element={Login} />
-        <Route path="/contacts" element={Contacts} />
+        <Route path="/" element={HomePage} />>
+        <Route path="/register" element={RegisterPage} />
+        <Route path="/login" element={LoginPage} />
+        <Route path="/contacts" element={ContactsPage} />
       </Routes>
     </Suspense>
   );
