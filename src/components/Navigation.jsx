@@ -13,7 +13,7 @@ export const Navigation = () => {
         <NavLink to="/">Home</NavLink>
         {isLoggedIn && <NavLink to="tasks">Tasks</NavLink>}
       </div>
-      <div></div>
+      <div>{isLoggedIn ? <UserMenu /> : <AuthNav />}</div>
     </nav>
   );
 };
