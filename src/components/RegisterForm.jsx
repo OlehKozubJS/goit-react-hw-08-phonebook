@@ -27,7 +27,7 @@ export const RegisterForm = () => {
       <label>
         <h3 className={ContactFormStyles.contactFormInputHeader}>Username</h3>
         <input
-          lassName={ContactFormStyles.contactFormInput}
+          сlassName={ContactFormStyles.contactFormInput}
           type="text"
           name="name"
         />
@@ -35,7 +35,7 @@ export const RegisterForm = () => {
       <label>
         <h3 className={ContactFormStyles.contactFormInputHeader}>Email</h3>
         <input
-          lassName={ContactFormStyles.contactFormInput}
+          сlassName={ContactFormStyles.contactFormInput}
           type="email"
           name="email"
         />
