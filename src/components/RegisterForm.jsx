@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
-//import css
+import ContactFormStyles from './PhonebookCSS/ContactForm.module.css';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
