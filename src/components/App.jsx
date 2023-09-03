@@ -17,6 +17,9 @@ const LoginPage = lazyImport('Login');
 const ContactsPage = lazyImport('Contacts');
 
 export const App = () => {
+  const dispatch = useDispatch();
+  const { isRefreshing } = useAuth();
+
   return (
     <Suspense>
       <Routes>
