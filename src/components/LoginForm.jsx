@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-//import css
+import ContactFormStyles from './PhonebookCSS/ContactForm.module.css';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -18,16 +18,33 @@ export const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="off">
+    <form
+      className={ContactFormStyles.contactForm}
+      onSubmit={handleSubmit}
+      autoComplete="off"
+    >
       <label>
-        <h3>Email</h3>
-        <input type="email" name="email" />
+        <h3 className={ContactFormStyles.contactFormInputHeader}>Email</h3>
+        <input
+          className={ContactFormStyles.contactFormInput}
+          type="email"
+          name="email"
+        />
       </label>
       <label>
-        <h3>Password</h3>
-        <input type="password" name="password" />
+        <h3 className={ContactFormStyles.contactFormInputHeader}>Password</h3>
+        <input
+          className={ContactFormStyles.contactFormInput}
+          type="password"
+          name="password"
+        />
       </label>
-      <button type="submit">Log In</button>
+      <button
+        className={ContactFormStyles.contactFormSubmitButton}
+        type="submit"
+      >
+        Log In
+      </button>
     </form>
   );
 };
