@@ -41,5 +41,7 @@ export const App = () => {
 };
 
 /*
-<PrivateRoute redirectTo="/login" component={} />
+<PrivateRoute redirectTo="/contacts" component={<RegisterPage />} />
+<PrivateRoute redirectTo="/contacts" component={<LoginPage />} />
+<PrivateRoute redirectTo="/login" component={<ContactsPage />} />
 */
