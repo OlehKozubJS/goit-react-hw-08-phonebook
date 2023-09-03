@@ -1,9 +1,6 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
-//import AppCSS from './css/App.module.css';
-//import Navigation from 'components/Navigation';
-import { useSelector } from 'react-redux';
-import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 
 const lazyImport = newComponent => {
   return lazy(() => import(`../pages/${newComponent}`));
@@ -14,9 +11,6 @@ const Login = lazyImport('Login');
 const Contacts = lazyImport('Contacts');
 
 export const App = () => {
-  const isLoading = useSelector(selectIsLoading);
-  const error = useSelector(selectError);
-
   return (
     <Suspense>
       <Routes>
