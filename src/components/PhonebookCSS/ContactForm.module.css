@@ -1,5 +1,6 @@
 .contactForm {
   width: 100%;
+  padding-block: 25px;
   border: 3px double rgb(190, 210, 230);
   border-radius: 0 25px 0 25px;
   background-color: rgb(230, 240, 250);
