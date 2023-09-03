@@ -31,17 +31,29 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
+          <Route
+            path="/register"
+            element={
+              <PrivateRoute
+                redirectTo="/contacts"
+                component={<RegisterPage />}
+              />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <PrivateRoute redirectTo="/contacts" component={<LoginPage />} />
+            }
+          />
+          <Route
+            path="/contacts"
+            element={
+              <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
+            }
+          />
         </Route>
       </Routes>
     </Suspense>
   );
 };
-
-/*
-<PrivateRoute redirectTo="/contacts" component={<RegisterPage />} />
-<PrivateRoute redirectTo="/contacts" component={<LoginPage />} />
-<PrivateRoute redirectTo="/login" component={<ContactsPage />} />
-*/
