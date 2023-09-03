@@ -17,4 +17,22 @@ export const RegisterForm = () => {
     );
     form.reset();
   };
+
+  return (
+    <form onSubmit={handleSubmit} autoComplete="off">
+      <label>
+        <h3>Username</h3>
+        <input />
+      </label>
+      <label>
+        <h3>Email</h3>
+        <input />
+      </label>
+      <label>
+        <h3>Password</h3>
+        <input />
+      </label>
+      <button>Register</button>
+    </form>
+  );
 };
