@@ -63,6 +63,13 @@ button,
   font-size: 20px;
 }
 
+.styledLink {
+  text-decoration: none;
+  border: 1px solid rgb(190, 210, 230);
+  background-color: rgb(245, 250, 255);
+  color: rgb(130, 170, 190);
+}
+
 button:active {
   border-radius: 50px 0 50px 0;
 }
