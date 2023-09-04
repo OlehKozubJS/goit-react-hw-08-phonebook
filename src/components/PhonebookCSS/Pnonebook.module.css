@@ -64,10 +64,29 @@ button,
 }
 
 .styledLink {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   border: 1px solid rgb(190, 210, 230);
   background-color: rgb(245, 250, 255);
   color: rgb(130, 170, 190);
+}
+
+.styledLink:hover,
+.styledLink:focus {
+  background-color: rgb(245, 250, 255);
+}
+
+.styledLink:not(:hover) {
+  background-color: rgb(230, 240, 250);
+}
+
+.styledLink:active {
+  border: 5px double rgb(245, 255, 255);
+  color: rgb(245, 255, 255);
+  background-color: rgb(130, 170, 190);
 }
 
 button:active {
