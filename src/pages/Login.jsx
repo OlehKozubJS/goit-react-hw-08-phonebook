@@ -1,9 +1,10 @@
 import { LoginForm } from 'components/LoginForm';
+import css from '../components/PhonebookCSS/Pnonebook.module.css';
 
 const Login = () => {
   return (
     <div>
-      <h2>Login</h2>
+      <h2 className={css.phonebookHeader}>Login</h2>
       <LoginForm />
     </div>
   );
