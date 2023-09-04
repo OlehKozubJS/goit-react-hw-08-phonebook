@@ -3,7 +3,7 @@ import css from '../components/PhonebookCSS/Pnonebook.module.css';
 
 const Login = () => {
   return (
-    <div>
+    <div className={css.phonebook}>
       <h2 className={css.phonebookHeader}>Login</h2>
       <LoginForm />
     </div>
