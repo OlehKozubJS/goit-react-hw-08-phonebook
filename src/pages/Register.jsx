@@ -1,9 +1,10 @@
 import { RegisterForm } from 'components/RegisterForm';
+import css from '../components/PhonebookCSS/Pnonebook.module.css';
 
 const Register = () => {
   return (
     <div>
-      <h2>Registration</h2>
+      <h2 className={css.phonebookHeader}>Registration</h2>
       <RegisterForm />
     </div>
   );
