@@ -3,6 +3,7 @@ import { useAuth } from 'hooks';
 import { AuthNav } from './AuthNav';
 import { UserMenu } from './UserMenu';
 //import css from './PhonebookCSS/Navigation.module.css';
+import css from '../components/PhonebookCSS/Pnonebook.module.css';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
@@ -10,7 +11,9 @@ export const Navigation = () => {
   return (
     <nav>
       <div>
-        <NavLink to="/">Home</NavLink>
+        <NavLink className={css.styledLink} to="/">
+          Home
+        </NavLink>
         {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
       </div>
       <div>{isLoggedIn ? <UserMenu /> : <AuthNav />}</div>
