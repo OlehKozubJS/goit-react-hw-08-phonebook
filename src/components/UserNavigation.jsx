@@ -4,7 +4,7 @@ import css from '../components/PhonebookCSS/Navigation.module.css';
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/operations';
 
-export const Navigation = () => {
+export const UserNavigation = () => {
   const dispatch = useDispatch();
   const { isLoggedIn, user } = useAuth();
 
