@@ -39,3 +39,9 @@
   color: rgb(245, 255, 255);
   background-color: rgb(130, 170, 190);
 }
+
+.welcomeText {
+  font-family: 'Lugrasimo', cursive;
+  font-size: 20px;
+  color: rgb(130, 190, 130);
+}
