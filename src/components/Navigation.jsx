@@ -2,13 +2,11 @@ import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
 import css from '../components/PhonebookCSS/Navigation.module.css';
 import { useDispatch } from 'react-redux';
-import { logOut } from 'redux/auth/operations';
 import { UserNavigation } from './UserNavigation';
 import { AuthNavigation } from './AuthNavigation';
 
 export const Navigation = () => {
-  const dispatch = useDispatch();
-  const { isLoggedIn, user } = useAuth();
+  const { isLoggedIn } = useAuth();
 
   return (
     <nav className={css.navigation}>
