@@ -3,7 +3,7 @@ import css from '../components/PhonebookCSS/Navigation.module.css';
 
 export const AuthNav = () => {
   return (
-    <div>
+    <div className={css.navSection}>
       <NavLink className={css.styledLink} to="/register">
         Register
       </NavLink>
