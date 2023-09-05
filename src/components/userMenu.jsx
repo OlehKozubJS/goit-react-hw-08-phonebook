@@ -9,7 +9,7 @@ export const UserMenu = () => {
   const { user } = useAuth();
 
   return (
-    <div className="">
+    <div className={navCss.navSection}>
       <p className={navCss.welcomeText}>Welcome, {user.name}</p>
       <button
         className={navCss.styledLink}
