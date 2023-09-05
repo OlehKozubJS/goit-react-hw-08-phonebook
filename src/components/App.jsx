@@ -6,7 +6,6 @@ import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
-import css from './PhonebookCSS/Pnonebook.module.css';
 
 const lazyImport = newComponent => {
   return lazy(() => import(`../pages/${newComponent}`));
