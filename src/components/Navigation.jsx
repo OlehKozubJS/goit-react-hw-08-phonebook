@@ -9,7 +9,7 @@ export const Navigation = () => {
 
   return (
     <nav className={css.navigation}>
-      <div>
+      <div className={css.navSection}>
         <NavLink className={css.styledLink} to="/">
           Home
         </NavLink>
