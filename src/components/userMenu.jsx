@@ -4,7 +4,7 @@ import { useAuth } from 'hooks';
 import css from '../components/PhonebookCSS/Navigation.module.css';
 import navCss from '../components/PhonebookCSS/Navigation.module.css';
 
-export const UserMenu = () => {
+export const UserNav = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
 
