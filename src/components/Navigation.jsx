@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
 import css from '../components/PhonebookCSS/Navigation.module.css';
-import { useDispatch } from 'react-redux';
 import { UserNavigation } from './UserNavigation';
 import { AuthNavigation } from './AuthNavigation';
 
