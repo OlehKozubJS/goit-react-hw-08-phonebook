@@ -3,6 +3,8 @@ import { useAuth } from 'hooks';
 import css from '../components/PhonebookCSS/Navigation.module.css';
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/operations';
+import { UserNavigation } from './UserNavigation';
+import { AuthNavigation } from './AuthNavigation';
 
 export const Navigation = () => {
   const dispatch = useDispatch();
@@ -20,29 +22,7 @@ export const Navigation = () => {
           </NavLink>
         )}
       </div>
-      <div>
-        {isLoggedIn ? (
-          <div className={css.navSection}>
-            <p className={css.welcomeText}>Welcome, {user.name}!</p>
-            <button
-              className={css.styledLink}
-              type="button"
-              onClick={() => dispatch(logOut())}
-            >
-              Logout
-            </button>
-          </div>
-        ) : (
-          <div className={css.navSection}>
-            <NavLink className={css.styledLink} to="/register">
-              Register
-            </NavLink>
-            <NavLink className={css.styledLink} to="/login">
-              Log In
-            </NavLink>
-          </div>
-        )}
-      </div>
+      <div>{isLoggedIn ? <UserNavigation /> : <AuthNavigation />}</div>
     </nav>
   );
 };
