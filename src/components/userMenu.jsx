@@ -10,7 +10,7 @@ export const UserMenu = () => {
 
   return (
     <div className={navCss.navSection}>
-      <p className={navCss.welcomeText}>Welcome, {user.name}</p>
+      <p className={navCss.welcomeText}>Welcome, {user.name}!</p>
       <button
         className={navCss.styledLink}
         type="button"
