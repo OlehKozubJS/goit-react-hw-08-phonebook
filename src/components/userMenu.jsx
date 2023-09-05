@@ -21,5 +21,3 @@ export const UserNav = () => {
     </div>
   );
 };
-
-export default UserMenu;
