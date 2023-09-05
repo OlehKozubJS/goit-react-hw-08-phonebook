@@ -47,5 +47,7 @@
 }
 
 .navSection {
+  padding-inline: 15px;
   display: flex;
+  column-gap: 15px;
 }
