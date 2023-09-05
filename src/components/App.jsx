@@ -61,11 +61,3 @@ export const App = () => {
     </Suspense>
   );
 };
-
-/*
-              <RestrictedRoute
-                redirectTo="/contacts"
-                component={<LoginPage />}
-              />
-
-*/
