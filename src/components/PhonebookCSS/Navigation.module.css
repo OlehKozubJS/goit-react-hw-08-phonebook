@@ -49,5 +49,6 @@
 .navSection {
   padding-inline: 15px;
   display: flex;
+  align-items: center;
   column-gap: 15px;
 }
