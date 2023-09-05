@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
-import { AuthNav } from './AuthNav';
-import { UserMenu } from './UserMenu.jsx';
 import css from '../components/PhonebookCSS/Navigation.module.css';
+import { useDispatch } from 'react-redux';
+import { logOut } from 'redux/auth/operations';
 
 export const Navigation = () => {
-  const { isLoggedIn } = useAuth();
+  const dispatch = useDispatch();
+  const { isLoggedIn, user } = useAuth();
 
   return (
     <nav className={css.navigation}>
@@ -19,7 +20,29 @@ export const Navigation = () => {
           </NavLink>
         )}
       </div>
-      <div>{isLoggedIn ? <UserMenu /> : <AuthNav />}</div>
+      <div>
+        {isLoggedIn ? (
+          <div className={css.navSection}>
+            <p className={css.welcomeText}>Welcome, {user.name}!</p>
+            <button
+              className={css.styledLink}
+              type="button"
+              onClick={() => dispatch(logOut())}
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <div className={css.navSection}>
+            <NavLink className={css.styledLink} to="/register">
+              Register
+            </NavLink>
+            <NavLink className={css.styledLink} to="/login">
+              Log In
+            </NavLink>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };
