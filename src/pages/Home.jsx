@@ -1,6 +1,8 @@
+import css from '../components/PhonebookCSS/Pnonebook.module.css';
+
 const Home = () => {
   return (
-    <div>
+    <div className={css.homeHeader}>
       <h1>Welcome</h1>
     </div>
   );
