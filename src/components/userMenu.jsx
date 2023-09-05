@@ -1,18 +1,17 @@
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
-//import css from '../components/PhonebookCSS/Navigation.module.css';
-import navCss from '../components/PhonebookCSS/Navigation.module.css';
+import css from '../components/PhonebookCSS/Navigation.module.css';
 
 export const UserNav = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
 
   return (
-    <div className={navCss.navSection}>
-      <p className={navCss.welcomeText}>Welcome, {user.name}!</p>
+    <div className={css.navSection}>
+      <p className={css.welcomeText}>Welcome, {user.name}!</p>
       <button
-        className={navCss.styledLink}
+        className={css.styledLink}
         type="button"
         onClick={() => dispatch(logOut())}
       >
