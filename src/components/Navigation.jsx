@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
 import { AuthNav } from './AuthNav';
-import UserMenu from './UserMenu.jsx';
+import { UserNav } from './UserMenu.jsx';
 import css from '../components/PhonebookCSS/Navigation.module.css';
 
 export const Navigation = () => {
@@ -19,7 +19,7 @@ export const Navigation = () => {
           </NavLink>
         )}
       </div>
-      <div>{isLoggedIn ? <UserMenu /> : <AuthNav />}</div>
+      <div>{isLoggedIn ? <UserNav /> : <AuthNav />}</div>
     </nav>
   );
 };
