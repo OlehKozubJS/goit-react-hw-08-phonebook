@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
 import { AuthNav } from './AuthNav';
-import { UserMenu } from './UserMenu.jsx';
+import UserMenu from './UserMenu.jsx';
 import css from '../components/PhonebookCSS/Navigation.module.css';
 
 export const Navigation = () => {
