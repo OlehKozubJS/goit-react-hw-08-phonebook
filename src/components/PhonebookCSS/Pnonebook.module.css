@@ -65,3 +65,10 @@ button {
 button:active {
   border-radius: 50px 0 50px 0;
 }
+
+.homeHeader {
+  text-align: center;
+  font-family: 'Lugrasimo', cursive;
+  font-size: 100px;
+  color: rgb(170, 130, 190);
+}
